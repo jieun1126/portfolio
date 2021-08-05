@@ -510,6 +510,7 @@ section#etc {width: 100%;
     background: #f9f9f9;
     padding: 100px 0;
     min-width: 1400px;
+    clear: both;
     }
     
     section#etc .etc_main {
