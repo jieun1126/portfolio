@@ -5,6 +5,12 @@
 ul, li {margin: 0; padding: 0; list-style: none;}
 a {text-decoration: none;}
 
+.blind {
+    position:absolute; top:0; left:0;
+    overflow:hidden; text-indent:-9999999px;
+    width: 0; height: 0; font-size:0;
+}
+
 /* 영문폰트연결 */
 body {font: normal 15px 'RalewayL'; color: #444;}
 @font-face {
@@ -70,8 +76,8 @@ padding: 70px 0; overflow: hidden;}
     width: 500px; padding-left: 30px;
 }
 #wrap section#profile .profile_main .p_left .img {
-    background: url(../images/profilepic.png);
-    background-size: 75%;
+    background: url(../images/profilepicgradient.png);
+    background-size: 60%;
     background-repeat: no-repeat;
     background-position: center;
     width: 400px; height: 400px;
@@ -202,7 +208,7 @@ font-weight: 100;}
 }
 /* 이미지 */
 #wrap section#portfolio .portfolio_main dl:nth-child(1) dt{
-    background: url("../images/pf5.png")no-repeat 0 100%;
+    background: url("../images/pf1.png")no-repeat 0 100%;
     background-size: 120%;
 }
 /* 내용 */
@@ -306,7 +312,7 @@ font-weight: 100;}
 }
 /* 이미지 */
 #wrap section#portfolio .portfolio_main dl:nth-child(3) dt{
-    background: url("../images/pf3.png")no-repeat center center;
+    background: url("../images/pf3.png")no-repeat 100% 100%;
     background-size: 100%;
 }
 /* 내용 */
@@ -454,7 +460,6 @@ font-weight: 100;}
 /* pf-06 */
 #wrap section#portfolio .portfolio_main dl:nth-child(6){
     position: relative;
-    clear: both;
 }
 /* 이미지 */
 #wrap section#portfolio .portfolio_main dl:nth-child(6) dt{
@@ -502,6 +507,58 @@ font-weight: 100;}
 .portfolio_main dl:nth-child(6) dd p.site_btn a:hover {
     color: #b5cc7c;
     border: 1px solid #b5cc7c;}
+
+
+/* pf-07 */
+
+#wrap section#portfolio .portfolio_main dl:nth-child(7){
+    position: relative;
+    clear: both;
+}
+/* 이미지 */
+#wrap section#portfolio .portfolio_main dl:nth-child(7) dt{
+    background: url("../images/phonemock.png")no-repeat 0 100%;
+    background-size: 80%;
+}
+/* 내용 */
+#wrap section#portfolio .portfolio_main dl:nth-child(7) dd {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    width: 450px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.portfolio_main dl:nth-child(7) dd h4 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.portfolio_main dl:nth-child(7) dd h5 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+.portfolio_main dl:nth-child(7) dd p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+.portfolio_main dl:nth-child(7) dd p.site_btn a {
+    display: block;
+    width: 100px;
+    padding: 10px 70px;
+    margin-top: 30px;
+    text-align: center;
+    color: #000;
+    transition: 0.5s;
+    letter-spacing: 5px;
+    border: 1px solid #444;
+
+}
+.portfolio_main dl:nth-child(7) dd p.site_btn a:hover {
+    color: #b5cc7c;
+    border: 1px solid #b5cc7c;
+}
 
 /* section etc - 기타 디자인 */
 
@@ -601,17 +658,18 @@ section#etc .etc_main dl dd span {
     font-weight: normal;
 }
 
-/* 하단 화살표 */
+/* 하단화살표 */
 .btn_top {
-    position: fixed;
+    position: fixed; 
     right: 2%;
     bottom: 7%;
     width: 50px;
     height: 50px;
     cursor: pointer;
     display: none;
-    z-index: 99;
+    z-index:99;
 }
+
 
 /* footer */
 #wrap footer {width: 100%;}
@@ -646,4 +704,267 @@ section#etc .etc_main dl dd span {
     font-size: 14px;
     color:#aaa;
     text-align: center;
+}
+
+/* popup all */
+
+#wrap #popup {width: 100%; margin: 0 auto;}
+#wrap #popup .popup_main {
+    width: 100%; margin: 0 auto;
+}
+
+#wrap #popup .popup_main .bg {
+    position: fixed; top: 0; right: 0; left: 0; bottom: 0;
+background: rgba(0,0,0,0.7); z-index: 99999;
+display: none;
+}
+
+#wrap #popup .popup_main .bg p.close {
+    position: fixed;
+    bottom: 5%; left: 50%;
+    transform: translate(-50%,0);
+    color: #ebe9e9;
+    font-size: 13px;
+    font-weight: 100;
+    z-index: 99999;
+}
+/* popup1 */
+#popup1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 800px;
+    height: 538px;
+    overflow: hidden;
+    z-index: 99999;
+    display: none;
+}
+
+#popup1 button {width: 100px;
+height: 100px; font-size: 70px;
+font-weight: 100;
+padding-bottom: 10px;
+outline: 0;
+border: 0;
+box-shadow: 0;
+background: #333;
+color: #fff;
+opacity: 0.3;
+cursor: pointer;
+font-family: "RalewayT";
+z-index: 99999;
+}
+
+#popup1 button.prev{
+    position: absolute;
+    top: 40%;
+    left: 0;
+}
+#popup1 button.next{
+    position: absolute;
+    top: 40%;
+    right: 0;
+}
+
+#wrap #popup .popup_main #popup1 ul.popList{
+    width: 2400px;
+    height: 738px;
+}
+
+#wrap #popup .popup_main #popup1 ul.popList li.popImg {
+    width: 800px;
+    height: 538px;
+}
+/* popup2 */
+#popup2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 800px;
+    height: 538px;
+    overflow: hidden;
+    z-index: 99999;
+    display: none;
+}
+
+#popup2 button {width: 100px;
+height: 100px; font-size: 70px;
+font-weight: 100;
+padding-bottom: 10px;
+outline: 0;
+border: 0;
+box-shadow: 0;
+background: #333;
+color: #fff;
+opacity: 0.3;
+cursor: pointer;
+font-family: "RalewayT";
+z-index: 99999;
+}
+
+#popup2 button.prev{
+    position: absolute;
+    top: 40%;
+    left: 0;
+}
+#popup2 button.next{
+    position: absolute;
+    top: 40%;
+    right: 0;
+}
+
+#wrap #popup .popup_main #popup2 ul.popList{
+    width: 2400px;
+    height: 738px;
+}
+
+#wrap #popup .popup_main #popup2 ul.popList li.popImg {
+    width: 800px;
+    height: 538px;
+}
+/* popup3 */
+#popup3 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 800px;
+    height: 538px;
+    overflow: hidden;
+    z-index: 99999;
+    display: none;
+}
+
+#popup3 button {width: 100px;
+height: 100px; font-size: 70px;
+font-weight: 100;
+padding-bottom: 10px;
+outline: 0;
+border: 0;
+box-shadow: 0;
+background: #333;
+color: #fff;
+opacity: 0.3;
+cursor: pointer;
+font-family: "RalewayT";
+z-index: 99999;
+}
+
+#popup3 button.prev{
+    position: absolute;
+    top: 40%;
+    left: 0;
+}
+#popup3 button.next{
+    position: absolute;
+    top: 40%;
+    right: 0;
+}
+
+#wrap #popup .popup_main #popup3 ul.popList{
+    width: 2400px;
+    height: 738px;
+}
+
+#wrap #popup .popup_main #popup3 ul.popList li.popImg {
+    width: 800px;
+    height: 538px;
+}
+/* popup4 */
+#popup4 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 800px;
+    height: 538px;
+    overflow: hidden;
+    z-index: 99999;
+    display: none;
+}
+
+#popup4 button {width: 100px;
+height: 100px; font-size: 70px;
+font-weight: 100;
+padding-bottom: 10px;
+outline: 0;
+border: 0;
+box-shadow: 0;
+background: #333;
+color: #fff;
+opacity: 0.3;
+cursor: pointer;
+font-family: "RalewayT";
+z-index: 99999;
+}
+
+#popup4 button.prev{
+    position: absolute;
+    top: 40%;
+    left: 0;
+}
+#popup4 button.next{
+    position: absolute;
+    top: 40%;
+    right: 0;
+}
+
+#wrap #popup .popup_main #popup4 ul.popList{
+    width: 2400px;
+    height: 738px;
+}
+
+#wrap #popup .popup_main #popup4 ul.popList li.popImg {
+    width: 800px;
+    height: 538px;
+}
+/* popup5 */
+#popup5 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 800px;
+    height: 538px;
+    overflow: hidden;
+    z-index: 99999;
+    display: none;
+}
+
+#popup5 button {width: 100px;
+height: 100px; font-size: 70px;
+font-weight: 100;
+padding-bottom: 10px;
+outline: 0;
+border: 0;
+box-shadow: 0;
+background: #333;
+color: #fff;
+opacity: 0.3;
+cursor: pointer;
+font-family: "RalewayT";
+z-index: 99999;
+}
+
+#popup5 button.prev{
+    position: absolute;
+    top: 40%;
+    left: 0;
+}
+#popup5 button.next{
+    position: absolute;
+    top: 40%;
+    right: 0;
+}
+
+#wrap #popup .popup_main #popup5 ul.popList{
+    width: 2400px;
+    height: 738px;
+}
+
+#wrap #popup .popup_main #popup5 ul.popList li.popImg {
+    width: 800px;
+    height: 538px;
 }
