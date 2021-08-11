@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> 구지은 - 포트폴리오 </title>
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./images/fv.png">
     <script src="./js/jquery-1.11.3.js"></script>
     <script src="./js/TweenMax.min.js"></script>
+    <script src="./js/main.js"></script>
     <!-- 제이쿼리의 animate의 제약사항을 해결해주는 트윈맥스 -->
 </head>
 <body>
@@ -37,6 +38,7 @@
 
 
         <section id="profile">
+            <h2 class="blind">profile</h2>
             <div class="profile_main">
                 <!-- 내사진 -->
                 <div class="p_left fl">
@@ -108,7 +110,6 @@
                             <dd>Adobe Illustrator</dd>
                             <dd>Adobe Indesign</dd>
                             <dd>Adobe XD</dd>
-                            <dd>Adobe Premiere pro</dd>
                             <dd>Visual Studio Code</dd>
                     </dl>
                 </div>
@@ -209,7 +210,9 @@
                         <p>REDESIGN WEB <br />
                             제작 : 메인, 프로모션<br /><br /><br />
                             스마트폰 이용자를 고려한
-                            반응형 웹으로 개발하였습니다.
+                            반응형 웹으로<br />
+                            기존 사이트의 스타일을 약간 변형하여<br />
+                            리디자인 하였습니다.
                         </p>
                         <p class="site_btn">
                             <a href="https://jieun1126.github.io/starbucks/" target="_blank">WEBSITE</a>
@@ -229,9 +232,10 @@
                             LINE <br /> life on LINE
                         </h5>
                         <p>REDESIGN WEB <br />
-                            제작 : 메인, 프로모션<br /><br /><br />
                             스마트폰 이용자를 고려한
-                            반응형 웹으로 개발하였습니다.
+                            반응형 웹으로<br />
+                            기존 사이트의 스타일을 약간 변형하여<br />
+                            리디자인 하였습니다.
                         </p>
                         <p class="site_btn">
                             <a href="https://jieun1126.github.io/line/" target="_blank">WEBSITE</a>
@@ -251,12 +255,29 @@
                             K-WATER
                         </h5>
                         <p>REDESIGN WEB <br />
-                            제작 : 메인, 프로모션<br /><br /><br />
-                            스마트폰 이용자를 고려한
-                            반응형 웹으로 개발하였습니다.
+                            제작 : 카피디자인<br /><br /><br />
                         </p>
                         <p class="site_btn">
-                            <a href="https://jieun1126.github.io/line/" target="_blank">WEBSITE</a>
+                            <a href="./images/grid.pdf" target="_blank">WEBSITE</a>
+                        </p>
+                    </dd>
+                </dl>
+                <dl>
+                    <!-- 이미지 -->
+                    <dt></dt>
+                    <!-- 설명 -->
+                    <dd>
+                        <h4>
+                            07. TOUCHMED
+                        </h4>
+                        <h5>
+                            TOUCHMED
+                        </h5>
+                        <p>UI/UX DESIGN<br />
+                            제작 : 메인, 기획, 디자인<br /><br /><br />
+                        </p>
+                        <p class="site_btn">
+                            <a href="./images/구지은-UI디자인.pdf" target="_blank">PDF</a>
                         </p>
                     </dd>
                 </dl>
@@ -361,50 +382,61 @@
                 <!-- popup1 -->
                 <div id="popup1">
                     <!-- 이전버튼 -->
-                    <button id="poev">&#60;</button>
-                    <ul>
-                        <li class="popImg fl"><img src="./images/emoticon.jpg" alt="이모티콘 책 목업"></li>
-                        <li class="popImg fl"><img src="./images/emoticon.png" alt="이모티콘 배색"></li>
+                    <button class="prev">&#60;</button>
+                    <ul class="popList">
+                        <li class="popImg fl"><img src="./project/etc/emo.jpg" alt="이모티콘 책 목업"></li>
+                        <li class="popImg fl"><img src="" width="800" alt="이모티콘 배색"></li>
                         <li class="popImg fl"><img src="./images/pop_emo_pillow.jpg" alt="이모티콘 베개 목업"></li>
                     </ul>
                     <!-- 다음버튼 -->
-                    <button id="next">&#62;</button>
+                    <button class="next">&#62;</button>
                 </div>
                 <!-- popup2 -->
                 <div id="popup2">
                     <!-- 이전버튼 -->
-                    <button id="poev">&#60;</button>
-                    <ul>
-                        <li class="popImg fl"><img src="./images/touchmedBI.jpg" alt=""></li>
-                        <li class="popImg fl"><img src="./images/icon.png" alt=""></li>
-                        <li class="popImg fl"><img src="" alt=""></li>
+                    <button class="prev">&#60;</button>
+                    <ul class="popList">
+                        <li class="popImg fl"><img src="./project/etc/touchmedBI.jpg" width="800" alt="BI설명"></li>
+                        <li class="popImg fl"><img src="./project/etc/iosandroid.jpg" alt="아이콘"></li>
+                        <li class="popImg fl"><img src="./project/etc/tbi.jpg" alt="목업"></li>
                     </ul>
                     <!-- 다음버튼 -->
-                    <button id="next">&#62;</button>
+                    <button class="next">&#62;</button>
                 </div>
                 <!-- popup3 -->
                 <div id="popup3">
                     <!-- 이전버튼 -->
-                    <button id="poev">&#60;</button>
-                    <ul>
-                        <li class="popImg fl"><img src="" alt=""></li>
-                        <li class="popImg fl"><img src="" alt=""></li>
-                        <li class="popImg fl"><img src="" alt=""></li>
+                    <button class="prev">&#60;</button>
+                    <ul class="popList">
+                        <li class="popImg fl"><img src="./project/etc/pf-07.png" width="800" alt="대쉬보드"></li>
+                        <li class="popImg fl"><img src="./project/etc/lottepopup.jpg" width="800" alt="롯데월드배너"></li>
+                        <li class="popImg fl"><img src="./project/etc/qrdesign.jpg" width="800" alt="QR디자인"></li>
                     </ul>
                     <!-- 다음버튼 -->
-                    <button id="next">&#62;</button>
+                    <button class="next">&#62;</button>
                 </div>
                 <!-- popup4 -->
                 <div id="popup4">
                     <!-- 이전버튼 -->
-                    <button id="poev">&#60;</button>
-                    <ul>
-                        <li class="popImg fl"><img src="./" alt=""></li>
-                        <li class="popImg fl"><img src="" alt=""></li>
-                        <li class="popImg fl"><img src="" alt=""></li>
+                    <button class="prev">&#60;</button>
+                    <ul class="popList">
+                        <li class="popImg fl"><img src="./project/etc/bon.jpg" width="500" alt="본아이에프"></li>
+                        <li class="popImg fl"><img src="./project/etc/graphicani.gif" alt="애니메이션"></li>
+                        <li class="popImg fl"><img src="./project/etc/goldenratio.jpg" alt="황금비율로고"></li>
                     </ul>
                     <!-- 다음버튼 -->
-                    <button id="next">&#62;</button>
+                    <button class="next">&#62;</button>
+                </div>
+                <div id="popup5">
+                    <!-- 이전버튼 -->
+                    <button class="prev">&#60;</button>
+                    <ul class="popList">
+                        <li class="popImg fl"><img src="./project/etc/icons.jpg" alt="아이콘"></li>
+                        <li class="popImg fl"><img src="./project/etc/tmicon.png" alt="로고"></li>
+                        <li class="popImg fl"><img src="./project/etc/graphicdesign.jpg" alt="그래픽디자인"></li>
+                    </ul>
+                    <!-- 다음버튼 -->
+                    <button class="next">&#62;</button>
                 </div>
                  
             </div>
