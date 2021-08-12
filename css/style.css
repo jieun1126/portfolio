@@ -260,7 +260,7 @@ font-weight: 100;}
 /* 이미지 */
 #wrap section#portfolio .portfolio_main dl:nth-child(2) dt{
     float: right; /*밑에서 float 해제*/
-    background: url("../images/pf2.png")no-repeat center center;
+    background: url("../images/pf4.png")no-repeat center center;
     background-size: 110%;
 }
 /* 내용 */
@@ -363,7 +363,7 @@ font-weight: 100;}
 /* 이미지 */
 #wrap section#portfolio .portfolio_main dl:nth-child(4) dt{
     float: right;
-    background: url("../images/pf4.png")no-repeat center center;
+    background: url("../images/pf2.png")no-repeat center center;
     background-size: 110%;
 }
 /* 내용 */
@@ -473,7 +473,7 @@ font-weight: 100;}
     top: 100px;
     left: 100px;
     width: 450px;
-    margin-top: 50px;
+    margin-top: 0px;
     margin-left: 50px;
     text-align: right;
 }
@@ -517,15 +517,15 @@ font-weight: 100;}
 }
 /* 이미지 */
 #wrap section#portfolio .portfolio_main dl:nth-child(7) dt{
-    background: url("../images/phonemock.png")no-repeat 0 100%;
-    background-size: 80%;
+    background: url("../images/phonemock.png")no-repeat center center;
+    background-size: 100%;
 }
 /* 내용 */
 #wrap section#portfolio .portfolio_main dl:nth-child(7) dd {
     position: absolute;
     top: 100px;
-    right: 100px;
-    width: 450px;
+    right: 300px;
+    width: 300px;
     margin-top: 50px;
     margin-left: 50px;
 }
@@ -576,6 +576,20 @@ section#etc {width: 100%;
         overflow: hidden;
         padding-top: 60px;
     }
+
+    #wrap section#etc h2 {font-size: 17px; margin: 0 auto;
+        border-bottom: 1px solid gray;
+        width: 80px; padding-bottom: 20px;
+        font-family: "SpoqaR";}
+        
+        #wrap section#etc h3 {font-size: 35px;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        letter-spacing: 2px;
+        font-weight: 100;
+        }
+
     section#etc .etc_main dl {
         width: 19.2%;
         margin-right: 1%; 
@@ -635,17 +649,17 @@ section#etc {width: 100%;
         width: 100%; height: 100%;
     }
     
-    dl.etc_1 dt i {background: url("../images/emoticon.jpg")
+    section#etc .etc_main dl.etc_1 dt i {background: url("../project/etc/cupmock.jpg")
         no-repeat center; background-size: cover;}
-    dl.etc_2 dt i {background: url("../images/pop_bonif.png")
-        no-repeat center; background-size: 66%;}
+    section#etc .etc_main dl.etc_2 dt i {background: url("../project/etc/tbi.jpg")
+        no-repeat center/cover;}
     
-    dl.etc_3 dt i {background: url("../images/pop_card.png")
-        no-repeat center; background-size: 84%;}
-    dl.etc_4 dt i {background: url("../images/pop_banner_g.jpg")
+    section#etc .etc_main dl.etc_3 dt i {background: url("../project/etc/qrdesign.jpg")
+        no-repeat center/cover;}
+    section#etc .etc_main dl.etc_4 dt i {background: url("../project/etc/bon.jpg")
         no-repeat center; background-size: cover;}
-    dl.etc_5 dt i {background: url("../images/pop_logo.png")
-        no-repeat center; background-size: 90%;}
+    section#etc .etc_main dl.etc_5 dt i {background: url("../project/etc/graphicani.gif")
+        no-repeat center/cover;}
 
 section#etc .etc_main dl dd {
     padding: 20px 0;
@@ -735,7 +749,7 @@ display: none;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 800px;
-    height: 538px;
+    height: 600px;
     overflow: hidden;
     z-index: 99999;
     display: none;
@@ -747,7 +761,7 @@ font-weight: 100;
 padding-bottom: 10px;
 outline: 0;
 border: 0;
-box-shadow: 0;
+  
 background: #333;
 color: #fff;
 opacity: 0.3;
@@ -774,7 +788,7 @@ z-index: 99999;
 
 #wrap #popup .popup_main #popup1 ul.popList li.popImg {
     width: 800px;
-    height: 538px;
+    height: 600px;
 }
 /* popup2 */
 #popup2 {
@@ -783,7 +797,7 @@ z-index: 99999;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 800px;
-    height: 538px;
+    height: 600px;
     overflow: hidden;
     z-index: 99999;
     display: none;
@@ -795,7 +809,6 @@ font-weight: 100;
 padding-bottom: 10px;
 outline: 0;
 border: 0;
-box-shadow: 0;
 background: #333;
 color: #fff;
 opacity: 0.3;
@@ -822,7 +835,12 @@ z-index: 99999;
 
 #wrap #popup .popup_main #popup2 ul.popList li.popImg {
     width: 800px;
-    height: 538px;
+    height: 600px;
+}
+
+#wrap #popup .popup_main #popup2 ul.popList li.popImg>img {
+    width: 800px;
+    height: 600px;
 }
 /* popup3 */
 #popup3 {
@@ -831,7 +849,7 @@ z-index: 99999;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 800px;
-    height: 538px;
+    height: 600px;
     overflow: hidden;
     z-index: 99999;
     display: none;
@@ -843,7 +861,7 @@ font-weight: 100;
 padding-bottom: 10px;
 outline: 0;
 border: 0;
-box-shadow: 0;
+  
 background: #333;
 color: #fff;
 opacity: 0.3;
@@ -870,7 +888,7 @@ z-index: 99999;
 
 #wrap #popup .popup_main #popup3 ul.popList li.popImg {
     width: 800px;
-    height: 538px;
+    height: 600px;
 }
 /* popup4 */
 #popup4 {
@@ -879,7 +897,7 @@ z-index: 99999;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 800px;
-    height: 538px;
+    height: 600px;
     overflow: hidden;
     z-index: 99999;
     display: none;
@@ -891,7 +909,7 @@ font-weight: 100;
 padding-bottom: 10px;
 outline: 0;
 border: 0;
-box-shadow: 0;
+  
 background: #333;
 color: #fff;
 opacity: 0.3;
@@ -918,7 +936,7 @@ z-index: 99999;
 
 #wrap #popup .popup_main #popup4 ul.popList li.popImg {
     width: 800px;
-    height: 538px;
+    height: 600px;
 }
 /* popup5 */
 #popup5 {
@@ -927,7 +945,7 @@ z-index: 99999;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 800px;
-    height: 538px;
+    height: 600px;
     overflow: hidden;
     z-index: 99999;
     display: none;
@@ -939,7 +957,7 @@ font-weight: 100;
 padding-bottom: 10px;
 outline: 0;
 border: 0;
-box-shadow: 0;
+  
 background: #333;
 color: #fff;
 opacity: 0.3;
@@ -966,5 +984,10 @@ z-index: 99999;
 
 #wrap #popup .popup_main #popup5 ul.popList li.popImg {
     width: 800px;
-    height: 538px;
+    height: 600px;
+}
+
+#wrap #popup .popup_main #popup5 ul.popList li.popImg>img {
+    width: 800px;
+    height: 600px;
 }
